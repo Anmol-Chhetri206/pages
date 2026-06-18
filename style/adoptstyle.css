@@ -1,0 +1,233 @@
+
+.navbar {
+    font-family:'Raleway', sans-serif ;
+    font-weight: bolder;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    padding: 1rem;
+    background-color: rgb(255, 253, 223);
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1500px;
+}
+.nav-logo{
+    font-size: 1.5rem;
+    color: rgb(21, 22, 60);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+.nav-menu{
+    display: flex;
+    text-align: center;
+    gap: 5.5rem;
+    list-style: none;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: rgb(6, 6, 45);
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(245, 114, 26);  /* orange */
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;   /* slides in from left */
+}
+.nav-menu a:hover {
+    color: rgb(245, 114, 26);  /* orange */
+    transition: color 0.3s ease;
+}
+.nav-icon{
+    width: 50px;
+    height:47px;
+}
+body{
+    color:#b19999
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    position: relative;
+}
+body::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:#e86405;
+    clip-path: inset(47% 0 0 0);
+    z-index: -1;
+}
+
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 80px 0;
+   
+}
+.container .mainpet-card{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    transition: all 1s ease;
+
+}
+#two:checked ~ .mainpet-card{
+    margin-left: -50%;
+}
+.mainpet-card .petcards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+.mainpet-card .petcards .petcard{
+    background: #fff;
+    width: calc(100%/3-10px);
+    padding: 20px;
+    border-radius: 24px;
+    transition: all 0.4s ease;
+}
+.mainpet-card .petcards .petcard:hover{
+    transform: translateY(-15px);
+}
+.petcards .petcard .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+}
+.petcards .petcard .content .img{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 10px;
+    background: #ee8114;
+    padding: 3px;
+    border-radius: 50%;
+}
+.petcards .petcard .content .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+.petcard .content .details .petname{
+    font-size:20px;
+    font-weight: 500;
+}
+.petcard .content .details .petbreed{
+    font-size: 14px;
+    color: #777;
+}
+.petcard .content .details .petage{
+    font-size: 14px;
+    color: #777;
+}
+.petcard .content .details .number{
+    font-size: 14px;
+    color: #777;
+}
+.petcard .content .media-icons{
+    display: flex;
+}
+.petcard .content .media-icons a{
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    background: #ee8114;
+    margin: 0 4px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+.content .media-icons a:hover{
+    border-color: #ff676d;
+    color: #ff676d;
+    background: #fff;
+}
+.button{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.button label{
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    margin: 0 4px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+.button label .active{
+    width: 35px;
+}
+#one:checked ~ .button label .one{
+    width: 35px;
+}
+#two:checked ~ .button label .two{
+    width: 35px;
+}
+#two:checked ~ .button label .one {
+    width: 15px;
+}
+#one:checked ~ .button label .two {
+    width: 15px;
+}
+input[type="radio"]{
+    display: none;
+}
+@media (max-width: 768px){
+    .mainpet-card .petcards .petcard{
+        width: calc(100% / 2 - 10px);
+        margin :20px 0 10px 0;
+    }
+}
+@media (max-width: 600px){
+    .mainpet-card .petcards .petcard{
+        width: 100%;
+    }
+}
+
+
