@@ -1,4 +1,4 @@
-# pages
+# Pawpal
 
 A simple GitHub Pages site containing HTML, CSS, and a bit of JavaScript. This repository appears focused on static front-end content (HTML ~53%, CSS ~41%, JavaScript ~6%).
 
