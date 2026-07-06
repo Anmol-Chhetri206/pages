@@ -225,7 +225,7 @@ body::before{
 {
   background: #ff8c00;
 }
-.openModal
+.open
 {
     margin-top: 10px;
     border-radius:20px ;
@@ -236,10 +236,10 @@ body::before{
     cursor: pointer;
     padding: 10px 25px;
 }
-.openModal:active{
+.open:active{
     opacity: 0.8;
 }
-.modal
+.info
 {
     display: none;
     background-color: rgba(0, 0, 0, 0.5);
@@ -255,13 +255,13 @@ body::before{
     align-items: center;
     justify-content: center;
 }
-.modal.open
+.info.open
 {
     display: flex;
     opacity: 1;
     z-index: 999;
 }
-.modal-inner
+.info-inner
 {
     background-color: #fff;
     border-radius: 5px;
@@ -270,10 +270,11 @@ body::before{
     text-align: center;
     width: 380px;
 }
-.modal-inner h2{
+.info-inner h2{
     margin: 0;
 }
-.modal-inner p{
+.info-inner p{
+    color: rgb(113, 104, 104);
     line-height: 24px;
     margin: 10px 0;
 }
@@ -414,5 +415,67 @@ display: flex;
     .hostelcard
     {
         min-width: 220px;
+    }
+}
+@media (max-width: 1024px){
+    .nav-menu{
+        gap: 1rem;
+    }
+    .nav-menu a{
+        font-size: 14px;
+    }
+    .nav-logo{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 768px){
+    .navbar{
+        height: auto;
+        padding: 10px;
+    }
+    .nav-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 0;
+    }
+    .nav-menu a{
+        font-size: 13px;
+    }
+     .footer-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-brand{
+        border: none;
+        padding: 20px;
+    }
+    .footer-links,
+    .footer-contact-info{
+        border: none;
+        padding: 20px;
+    }
+    .link-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 480px){
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .nav-logo{
+        font-size: 1rem;
+    }
+    .nav-icon{
+        width: 40px;
+        height: 40px;
     }
 }

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PawPal</title>
      <link rel="icon" type="image/png" href="images/pawpal.png">
-    <link rel="stylesheet" href="style/loginstyle.css">
+    <link rel="stylesheet" href="../style/loginstyle.css">
+    <script src="js/loginscript.js" defer></script>
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
   </head>
     <body>
@@ -14,15 +15,15 @@
         <a href="index.html" class="nav-logo">
             <img src="images/pawpal.png" alt="" class="nav-icon">PawPal</a>
          <ul class="nav-menu">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="adopt.html">Pet Adopt</a></li>
-            <li><a href="hostel.html">Pet Hostel</a></li>
-            <li><a href="doctor.html">Pet Doctors</a></li>
-            <li><a href="gallery.html">Pet Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="career1.html">Career</a></li>
-            <li><a href="login.html" class="btn-nav">LogOut</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pet Adopt</a></li>
+            <li><a href="#">Pet Hostel</a></li>
+            <li><a href="#">Pet Doctors</a></li>
+            <li><a href="#">Pet Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#" class="btn-nav">LogOut</a></li>
         </ul>
      </div>
     </nav>
@@ -55,19 +56,16 @@
 
     <div class="form-container">
 
-        <form onsubmit="return data()">
+        <form onsubmit="return login()">
 
             <h2>Login to your account</h2>
 
             <input type="email" id="email" placeholder="Email Address">
             <input type="password" id="password" placeholder="Password">
             <div class="options">
-                <label>
-                    <input type="checkbox"> Remember Me
-                </label>
-                <a href="forgot-password.html">Forgot Password?</a>
+                <a href="pages/forgotPassword.html">Forgot Password?</a>
             </div>
-            <button type="submit"><a href="home.html"></a>Log In</button>
+            <button type="submit">Log In</button>
         </form>
         <p class="continue">or continue with</p>
         <div class="social">
@@ -75,7 +73,7 @@
             <button>Facebook</button>
         </div>
         <p>
-            Don't have an account? <a href="register.html">Sign up</a>
+            Don't have an account? <a href="pages/register.html">Sign up</a>
         </p>
     </div>
 

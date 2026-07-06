@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PawPal</title>
-     <link rel="icon" type="image/png" href="pic/pawpal.png">
-    <link rel="stylesheet" href="style/homestyle.css">
+     <link rel="icon" type="image/png" href="../images/pawpal.png">
+     <style>
+      .material-symbols-outlined {
+     font-size: 40px !important; 
+     font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+    </style>
+    <link rel="stylesheet" href="../style/homestyle.css">
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-   <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />  
   </head>
 <body>
     <nav class="navbar">
       <div class="nav-container">
-        <a href="home.html" class="nav-logo">
-            <img src="images/pawpal.png" alt="" class="nav-icon">PawPal</a>
+        <a href="../mainHome.html" class="nav-logo">
+            <img src="../images/pawpal.png" alt="" class="nav-icon">PawPal</a>
          <ul class="nav-menu">
-            <li><a href="home.html">Home</a></li>
+            <li><a href="mainHome.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="adopt.html">Pet Adopt</a></li>
             <li><a href="hostel.html">Pet Hostel</a></li>
@@ -29,7 +33,7 @@
             <li><a href="gallery.html">Pet Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="career1.html">Career</a></li>
-            <li><a href="login.html" class="btn-nav">LogOut</a></li>
+            <li><a href="../index.html" class="btn-nav">LogOut</a></li>
         </ul>
      </div>
     </nav>
@@ -37,7 +41,7 @@
       <div class="left">
          <h1 class="h1-head"> Where pets <br>Feel at Home <br>Heart Feel
            <span class="h">Happy</span>
-             <img src="images/love.png" alt="" class="love">
+             <img src="../images/love.png" alt="" class="love">
          </h1>
            <p class="description"> Welcome to PawPal,<br>
         At PawPal, we believe every pet deserves love, care, and a happy home.<br>
@@ -47,25 +51,30 @@
       </div>
         <div class="box-1">
           <div class="text">
+            <span class="material-symbols-outlined">verified_user</span>
       <h2>Verified & Trusted</h2>
       <p>All hosts and pets are verified for own safety</p>
       </div>
 
   
         <div class="text">
+          <span class="material-symbols-outlined">home</span>
       <h2>Loving Environment</h2>
       <p>We ensure a comfortable safe environment</p>
    </div>
 
-    <div class="text">
-      <h2>Easy Booking</h2>
+    <div class="text">     
+      <span class="material-symbols-outlined">calendar_check</span>
+       <h2>Easy Booking</h2>
       <p>Simple free and hassle-free booking process</p>
     </div>
     <div class="text">
+      <span class="material-symbols-outlined">support_agent</span>
       <h2>24/7 Support</h2>
       <p>Our team is always there to help you</p>
       </div>
      <div class="text">
+      <span class="material-symbols-outlined">add_card</span>
       <h2>Secure Payment</h2>
       <p>100% secure payment and easy refunds</p>
       </div>
@@ -73,8 +82,8 @@
 </div>
     <div class="box-2">
       <div class="dog-container">
-      <p class="dog-text">looking for adoptions?🐾</p>
-              <img src="images/dog1.png" alt="" class="dog1">
+      <p class="dog-text">Looking for adoptions?🐾</p>
+              <img src="../images/dog1.png" alt="" class="dog1">
     
     </div>
     
@@ -86,24 +95,24 @@
 
      <div class="pets-offer">
       <div class="pets-item">
-        <img src="images/pets1.jpg" alt="">
+        <img src="../images/pets1.jpg" alt="">
         <h3>Jacks</h3>
       </div>
         <div class="pets-item">
-        <img src="images/pets2.jpg" alt="">
+        <img src="../images/pets2.jpg" alt="">
         <h3>Juju</h3>
       </div>
         <div class="pets-item">
-        <img src="images/pets3.jpg" alt="">
+        <img src="../images/pets3.jpg" alt="">
         <h3>Moomin</h3>
       </div>
         <div class="pets-item">
-        <img src="images/pets4.jpg" alt="">
+        <img src="../images/pets4.jpg" alt="">
         <h3>Silu</h3>
       </div>
      </div>
      <button class="btn-pets">
-       Find more
+       <a href="adopt.html">Find More</a>
      </button>
      </section>
     <footer id="footer">
@@ -112,14 +121,16 @@
         <h2>Quick Links</h2>
         <div class="link-container">
         <div class="links">
-        <a href="">Home</a>
-        <a href="home.html#about">About</a>
-        <a href="home.html#pets">Pets</a>
+        <a href="mainHome.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="about.html">Adopt Pets</a>
+        <a href="gallery.html">Pet Gallery</a>
       </div>
       <div class="links">
-        <a href="home.html#requirements">Requirements</a>
-        <a href="home.html#stories">Stories</a>
-        <a href="home.html#footer">Contact Us</a>
+        <a href="doctor.html">Pet Doctors</a>
+        <a href="hostel.html">Pet Hostels</a>
+        <a href="career1.html">Career</a>
+        <a href="contact.html">Contact Us</a>
       </div>
       </div>
       </div>

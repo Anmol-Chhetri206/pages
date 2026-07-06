@@ -4,8 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Registration</title>
-	<link rel="icon" type="image/png" href="images/pawpal.png">
-	<link rel="stylesheet" type="text/css" href="style/registerstyle.css">
+	<link rel="icon" type="image/png" href="../images/pawpal.png">
+	<link rel="stylesheet" type="text/css" href="../style/registerstyle.css">
+	<script src="../js/registerscript.js" defer></script>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
   </head>
 </head>
@@ -38,28 +39,8 @@
     </div>
     <div class="form-container">
 		<h2>Sign Up or Registration form</h2>
-		<script>
-		function data()
-		{
-		var fn=document.getElementById('fname').value;
-		var ln=document.getElementById('lname').value;
-		var contact=document.getElementById('contact').value;
-		var pw=document.getElementById('pw').value;
-		var cpw=document.getElementById('cpw').value;
-		if(fn== "" || ln == "" || contact == "" || pw == "" || cpw == "")
-		{
-		  alert("All Fields are Mandatory...");
-		  return false;
-		}
-		else if(pw!=cpw)
-		{
-			alert("Incorrect Password");
-			return false;
-		}
-		return true;
-		}
-	</script>
-	<form onsubmit="return data()" method="POST">
+		
+	<form onsubmit="return register()" method="GET">
 		First Name: <br>    <input type="text" id="fname" name="fname" placeholder="Enter Your First Name"><br><br>
 		Last Name:  <br>      <input type="text" id="lname" name="lname" placeholder="Enter Your Last Name"><br><br>
 		Contact:    <br>        <input type="tel" id="contact" name="contact" placeholder="Enter Your Contact Number" pattern="9[78][0-9]{8}"><br><br>
@@ -67,8 +48,6 @@
 		Password:  <br>         <input type="password" id="pw" name="pw"><br><br>
 		Confirm Password: <br>  <input type="password" id="cpw" name="cpw"><br><br>
 		<input type="submit" class="submit" value="Submit">
-        
-		<button class="login-btn"<a href="login.html">Login</a></button>
 	</form>
 </div>
 </body>

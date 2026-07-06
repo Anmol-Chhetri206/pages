@@ -78,12 +78,12 @@ body{
     height:47px;
 }
 
-.contact-section{
+.contact{
     display:flex;
     justify-content:space-around;
     align-items:center;
     padding:60px;
-    gap:50px;
+    gap:5px;
 }
 
 .contact-info{
@@ -100,19 +100,21 @@ body{
     line-height:1.6;
 }
 
-.info-box{
+.information{
+    width: 100%;
     margin-top:20px;
     background:white;
-    padding:20px;
+    padding:10px;
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-.contact-form{
+.contactform{
     width:40%;
 }
 
 form{
+    margin-top: -20px;
     background:white;
     padding:30px;
     border-radius:20px;
@@ -121,11 +123,13 @@ form{
 
 form h2{
     margin-bottom:20px;
+    text-align: center;
+    color: #ff8a1f;
 }
 
 input,
 textarea{
-    width:100%;
+    width:90%;
     padding:12px;
     margin-bottom:15px;
     border:1px solid #ccc;
@@ -140,4 +144,77 @@ button{
     border:none;
     border-radius:8px;
     cursor:pointer;
+}
+@media (max-width: 900px){
+    .contact{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .contact-info,
+    .contactform{
+        width:100%;
+    }
+    .contact-info h1{
+        font-size:40px;
+        text-align:center;
+    }
+}
+@media (max-width: 480px){
+    .contact{
+        padding:10px;
+    }
+    .contact-info h1{
+        font-size:32px;
+    }
+    form{
+        padding:20px;
+    }
+    input,
+    textarea{
+        width:100%;
+    }
+}
+@media (max-width: 1024px){
+    .nav-menu{
+        gap: 1rem;
+    }
+    .nav-menu a{
+        font-size: 14px;
+    }
+    .nav-logo{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 768px){
+    .navbar{
+        height: auto;
+        padding: 10px;
+    }
+    .nav-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 0;
+    }
+    .nav-menu a{
+        font-size: 13px;
+    }
+}
+@media (max-width: 480px){
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .nav-logo{
+        font-size: 1rem;
+    }
+    .nav-icon{
+        width: 40px;
+        height: 40px;
+    }
 }

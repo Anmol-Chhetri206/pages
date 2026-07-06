@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+	<link rel="icon" type="image/png" href="../images/pawpal.png">
+	<link rel="stylesheet" type="text/css" href="../style/career1style.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+	<script src="../js/careerscript.js" defer></script>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+</head>
+<body>
+	<nav class="navbar">
+      <div class="nav-container">
+        <a href="../mainHome.html" class="nav-logo">
+            <img src="../images/pawpal.png" alt="" class="nav-icon">PawPal</a>
+         <ul class="nav-menu">
+            <li><a href="mainHome.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="adopt.html">Pet Adopt</a></li>
+            <li><a href="hostel.html">Pet Hostel</a></li>
+            <li><a href="doctor.html">Pet Doctors</a></li>
+            <li><a href="gallery.html">Pet Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="career1.html">Career</a></li>
+            <li><a href="../index.html" class="btn-nav">LogOut</a></li>
+        </ul>
+     </div>
+    </nav>
+	<div class="container">
+		<div class="c-text">
+			<h1>Join Our Team</h1>
+			<p>We provide the features like adoption, hostel and <br>
+			Pet Doctors recommendation to pet lovers.
+		</p>
+		<div class="dogcatimage">
+		   <img src="../images/new1.jpg" alt="Dog and Cat Image">
+		</div>
+		</div>
+		<form class="f-container" onsubmit="return data()">
+			First Name: <br> <input type="text" id="fname" placeholder="Enter Your First Name"><br><br>
+			Last Name: <br> <input type="text" id="lname" placeholder="Enter Your Last Name"><br><br>
+			Date-Of-Birth: <br> <input type="text" id="datepicker" placeholder="Enter Your Date Of Birth"><br><br>
+			Phone Number: <br> <input type="tel" id="contact" placeholder="Enter Phone Number" pattern="9[78][0-9]{8}"><br><br>
+			Email: <br> <input type="email" id="email" placeholder="Enter Email"><br><br>
+			Qualification: <select id="qualification" class="dropdown">
+				<option value="">Choose Your Degree</option>
+				<option value="Below10">Below 10</option>
+				<option value="SEE">10/SEE</option>
+				<option value="+2">+2/High School</option>
+				<option value="diploma">Diploma</option>
+				<option value="undergraduate">UnderGraduate</option>
+				<option value="graduate">Graduate</option>
+			</select>
+			<button type="submit" class="button">Submit</button>
+		</form>
+	</div>
+</body>
